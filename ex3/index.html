@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Ex3</title>
+</head>
+<body>
+    <style>
+        span {
+            display: none;
+        }
+    </style>
+    <p><input type="text"> <span>Polje obavezno</span></p>
+    <p><input type="password"> <span>Polje obavezno</span></p>
+    <script>
+        $('input').on("click", function () {
+            $(this).next('span').css("display", "inline").css("color", "red").fadeOut();
+        });
+    </script>
+</body>
+</html>
